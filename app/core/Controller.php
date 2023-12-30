@@ -10,4 +10,8 @@
             return new $model;
         }
 
+        public function session()
+        {
+            return new Session();
+        }
     }
