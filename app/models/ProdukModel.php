@@ -19,26 +19,24 @@ class ProdukModel {
     }
 
     public function tambahProduk($data) {
-        $query = "INSERT INTO produk (nama, deskripsi, harga, gambar) VALUES (:nama, :deskripsi, :harga, :gambar)";
+        $query = "INSERT INTO produk (nama, deskripsi, harga, foto) VALUES (:nama, :deskripsi, :harga, :foto)";
         $this->db->query($query);
-       
         $this->db->bind('nama', $data['nama']);
         $this->db->bind('deskripsi', $data['deskripsi']);
         $this->db->bind('harga', $data['harga']);
-        $this->db->bind('gambar', $data['gambar']);
+        $this->db->bind('foto', $data['foto']);
         $this->db->execute();
         return $this->db->rowCount();
     }
 
     public function updateProduk($data) {
-        $query = "UPDATE produk SET  user_id=:user_id, nama=:nama, deskripsi=:deskripsi, harga=:harga, gambar=:gambar  WHERE id=:id";
+        $query = "UPDATE produk SET   nama=:nama, deskripsi=:deskripsi, harga=:harga, foto=:foto  WHERE id=:id";
         $this->db->query($query);
         $this->db->bind('id', $data['id']);
-        $this->db->bind('user_id', $data['user_id']);
         $this->db->bind('nama', $data['nama']);
         $this->db->bind('deskripsi', $data['deskripsi']);
         $this->db->bind('harga', $data['harga']);
-        $this->db->bind('gambar', $data['gambar']);
+        $this->db->bind('foto', $data['foto']);
         $this->db->execute();
         return $this->db->rowCount();
     }
