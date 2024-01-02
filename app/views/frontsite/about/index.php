@@ -10,12 +10,13 @@
     </div>
 
     <div class="row gy-4">
-      <div class="col-lg-7 position-relative about-img"  style="background-image: url(<?= BASEURL; ?>/assets/frontsite/img/lili.jpg)"; data-aos="fade-up" data-aos-delay="150">
+    <div class="col-lg-7 position-relative about-img"  style="background-image: url(<?= BASEURL; ?>/assets/frontsite/img/lili.jpg)"; data-aos="fade-up" data-aos-delay="150">
       </div>
       <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
         <div class="content ps-0 ps-lg-5">
           <p class="fst-italic">
-          NHY Taylor menyediakan usaha jahit baju sesuai request pembeli,kami juga menyediakan kursus untuk mereka yang ingin belajar menjahit.
+          "Tingkatkan gaya Anda dengan NHY Taylor, tempat terbaik untuk menjahit baju sesuai keinginan Anda. Kreativitas kami, kepuasan Anda."
+
           </p>
           <ul>
           <li><i class="bi bi-rounded-right"></i> <strong>Nama Toko:</strong> NHY Taylor</li>
@@ -24,8 +25,8 @@
                   <li><i class="bi bi-rounded-right"></i> <strong>Alamat:</strong>jl.lintas timur,Desa Ransang,kec.Pelalawan,kab.Pelalawan</li>
           </ul>
           <p>
-          Kami Menerima bermacam request baju seperti Jas,Baju sekolah anak,dan baju lainnya.
-              Anda juga bisa memberikan bahan baju anda sendiri atau membeli bahan dari Toko kami.
+          Temukan kenyamanan dalam kemewahan dengan layanan NHY Taylor. Kami menerima beragam permintaan, dari jas elegan hingga seragam sekolah, serta desain pakaian lainnya.
+          Anda dapat membawa bahan baju Anda sendiri atau memilih bahan berkualitas tinggi dari toko kami.
           </p>
         </div>
       </div>

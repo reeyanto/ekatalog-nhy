@@ -13,6 +13,19 @@ class Produk extends Controller
         $this->view('backsite/templates/footer');
         $this->view('backsite/templates/script');
     }
+    public function search()
+    {
+        $data['title'] = 'Produk';
+        $data['produk'] = $this->model('ProdukModel')->cariProduk();
+        $data['key'] = $_POST['key'];
+        $this->view('backsite/templates/style', $data);
+        $this->view('backsite/templates/header', $data);
+        $this->view('backsite/templates/sidebar', $data);
+        $this->view('backsite/templates/breadcrumb', $data);
+        $this->view('backsite/produk/index', $data);
+        $this->view('backsite/templates/footer');
+        $this->view('backsite/templates/script');
+    }
 
     public function create()
     {
@@ -71,28 +84,25 @@ class Produk extends Controller
     {
         $data['title'] = 'Produk';
         $data['produk'] = $this->model('ProdukModel')->getProdukById($id);
-        $data['title'] = 'Profil';
-        $data['profil'] = $this->model('ProfilModel')->getProfilById($id);
         $this->view('backsite/templates/style', $data);
         $this->view('backsite/templates/header', $data);
         $this->view('backsite/templates/sidebar', $data);
         $this->view('backsite/templates/breadcrumb', $data);
         $this->view('backsite/produk/edit', $data);
-        $this->view('backsite/profil/edit', $data);
         $this->view('backsite/templates/footer');
         $this->view('backsite/templates/script');
     }
 
     public function update()
     {
-        if ($this->model('ProdukModel')->updateProduk($_POST) > 0) {
-            Flasher::setMessage('Berhasil', 'diupdate', 'success');
-            header('location: ' . BASEURL . '/backsite/produk');
-            exit;
-        } else {
-            Flasher::setMessage('Gagal', 'diupdate', 'danger');
-            header('location: ' . BASEURL . '/backsite/produk');
-            exit;
+        // if ($this->model('ProdukModel')->updateProduk($_POST) > 0) {
+        //     Flasher::setMessage('Berhasil', 'diupdate', 'success');
+        //     header('location: ' . BASEURL . '/backsite/produk');
+        //     exit;
+        // } else {
+        //     Flasher::setMessage('Gagal', 'diupdate', 'danger');
+        //     header('location: ' . BASEURL . '/backsite/produk');
+        //     exit;
         if (isset($_POST['proses'])) {
             $id = $_POST['id'];
             $namaFile = $_FILES['foto']['name'];
@@ -149,5 +159,17 @@ class Produk extends Controller
             }
         }
     }
-}
+    public function deploy($id)
+    {
+        if ($this->model('ProdukModel')->deleteProduk($id) > 0) {
+            Flasher::setMessage('Berhasil', 'dihapus', 'success');
+            header('location: ' . BASEURL . '/backsite/produk');
+            exit;
+        } else {
+            Flasher::setMessage('Gagal', 'dihapus', 'danger');
+            header('location: ' . BASEURL . '/backsite/produk');
+            exit;
+        }
     }
+
+}

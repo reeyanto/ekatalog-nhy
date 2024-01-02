@@ -9,10 +9,6 @@
             require_once '../app/models/' . $model . '.php';
             return new $model;
         }
-        public function session()
-        {
-            return new Session();
-        }
 
 }
     

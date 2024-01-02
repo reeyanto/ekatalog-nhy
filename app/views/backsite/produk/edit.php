@@ -16,21 +16,21 @@
               <div class="card-body">
                 <div class="form-group">
                   <label>Nama Produk</label>
-                  <input type="text" class="form-control" placeholder="masukkan nama produk..." name="edu_nama" value="<?= $data['produk']['edu_nama']; ?>">
+                  <input type="text" class="form-control" placeholder="masukkan nama produk..." name="nama" value="<?= $data['produk']['nama']; ?>">
                 </div>
                 <div class="form-group">
                   <label>Deskripsi</label>
-                  <input type="text" class="form-control" placeholder="masukkan deskripsi ..." name="edu_deskripsi" value="<?= $data['produk']['edu_deskripsi']; ?>">
+                  <input type="text" class="form-control" placeholder="masukkan deskripsi ..." name="deskripsi" value="<?= $data['produk']['deskripsi']; ?>">
                 </div>
                 <div class="form-group">
                   <label>Harga</label>
-                  <input type="text" class="form-control" placeholder="masukkan harga..." name="edu_harga" value="<?= $data['produk']['edu_harga']; ?>">
+                  <input type="text" class="form-control" placeholder="masukkan harga..." name="harga" value="<?= $data['produk']['harga']; ?>">
                 </div>
                 <div class="form-group">
-    <label>Foto</label>
-    <input type="file" class="form-control" name="foto">
-    <img src="<?= BASEURL . "/public/assets/frontsite/img/foto_profile/" . $data['produk']['foto']; ?>" style="width: 60px;">
-   </div>
+                    <label>Foto</label>
+                    <input type="file" class="form-control" name="foto">
+                    <img src="<?= BASEURL . "/public/assets/frontsite/img/foto_profile/" . $data['produk']['foto']; ?>" style="width: 60px;">
+                   </div>
               </div>
               <!-- /.card-body -->
               <div class="card-footer">

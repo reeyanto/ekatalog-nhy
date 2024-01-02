@@ -843,6 +843,11 @@ section {
   }
 }
 
+.about-img {
+  background-image: url(/assets/frontsite/img/lili.jpg);
+}
+
+
 .menu .nav-link i {
   padding-right: 15px;
   font-size: 48px;

@@ -38,13 +38,3 @@
     </script>
 </body>
 </html>
-
-              </div><!-- Menu Item -->
-
-            </div>
-          </div><!-- End Dinner Menu Content -->
-
-        </div>
-
-      </div>
-    </section><!-- End Menu Section -->

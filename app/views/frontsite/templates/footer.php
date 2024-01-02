@@ -8,8 +8,8 @@
           <div>
             <h4>Address</h4>
             <p>
-              walaeee <br>
-              Pelalawan ,pangkalan kerinci<br>
+              Desa Ransang <br>
+              Kab.Pelalawan ,Kec.palalawan<br>
             </p>
           </div>
 
@@ -20,8 +20,8 @@
           <div>
             <h4>Reservations</h4>
             <p>
-              <strong>Phone:</strong> +6288000000<br>
-              <strong>Email:</strong> haloo@gmail.com<br>
+              <strong>Phone:</strong> +6285159774389<br>
+              <strong>Email:</strong> fernanda01pratama@gmail.com<br>
             </p>
           </div>
         </div>
