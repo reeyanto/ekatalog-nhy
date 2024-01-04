@@ -11,6 +11,7 @@
 
     <div class="row gy-4">
     <div class="col-lg-7 position-relative about-img"  style="background-image: url(<?= BASEURL; ?>/assets/frontsite/img/foto.jpg)"; data-aos="fade-up" data-aos-delay="150">
+
       </div>
       <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
         <div class="content ps-0 ps-lg-5">
@@ -25,6 +26,7 @@
                   <li><i class="bi bi-rounded-right"></i> <strong>Alamat:</strong>jl.lintas timur,Desa Ransang,kec.Pelalawan,kab.Pelalawan</li>
           </ul>
           <p>
+
           Temukan kenyamanan dalam kemewahan dengan layanan NHY Taylor. Kami menerima beragam permintaan, dari jas elegan hingga seragam sekolah, serta desain pakaian lainnya.
           Anda dapat membawa bahan baju Anda sendiri atau memilih bahan berkualitas tinggi dari toko kami.
           </p>

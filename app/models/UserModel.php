@@ -19,6 +19,7 @@ class UserModel {
     }
 
     public function tambahUser($data) {
+
         $query = "INSERT INTO user (nama, username, password) VALUES (:nama, :username, :passwor,)";
         $this->db->query($query);
         $this->db->bind('username', $data['username']);
@@ -29,11 +30,19 @@ class UserModel {
     }
 
     public function updateUser($data) {
+
         $query = "INSERT INTO user (nama, username, password ) VALUES (:nama, :username, :password)";
         $this->db->query($query);
         $this->db->bind('username', $data['username']);
         $this->db->bind('password', $data['password']);
         $this->db->bind('nama', $data['nama']);
+
+        $query = "INSERT INTO user (nama_pengguna, username, password, photo) VALUES (:nama_pengguna, :username, :password, :photo)";
+        $this->db->query($query);
+        $this->db->bind('nama_pengguna', $data['nama_pengguna']);
+        $this->db->bind('username', $data['username']);
+        $this->db->bind('password', $data['password']);
+        $this->db->bind('photo', $data['photo']);
         $this->db->execute();
         return $this->db->rowCount();
     }

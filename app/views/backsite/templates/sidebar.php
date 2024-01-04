@@ -5,7 +5,6 @@
     <img src="<?= BASEURL; ?>/assets/backsite/dist/img/RLogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
     <span class="brand-text font-weight-light">AdminTaylor</span>
   </a>
-
   <!-- Sidebar -->
   <div class="sidebar">
     <!-- Sidebar user (optional) -->
@@ -17,7 +16,6 @@
         <a href="#" class="d-block">NHY Taylor</a>
       </div>
     </div>
-
     <!-- Sidebar Menu -->
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -27,6 +25,22 @@
             <p> Produk </p>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="<?= BASEURL; ?>/backsite/user" class="nav-link">
+            <i class="nav-icon fas fa-address-book"></i>
+            <p> Master Contact </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="<?= BASEURL; ?>/backsite/user" class="nav-link">
+            <i class="nav-icon fas fa-user"></i>
+            <p> Master User</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="<?= BASEURL; ?>/backsite/signup" class="nav-link">
+            <i class="nav-icon fas fa-sign-out-alt"></i>
+            <p>Sign Up </p>
           </a>
         </li>
       </ul>

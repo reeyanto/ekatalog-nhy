@@ -824,7 +824,6 @@ section {
   border: 0;
 }
 
-
 .menu .nav-link {
   margin: 0 10px;
   padding: 10px 5px;
@@ -843,11 +842,6 @@ section {
     padding: 10px 0;
   }
 }
-
-.about-img {
-  background-image: url(/assets/frontsite/img/lili.jpg);
-}
-
 
 .menu .nav-link i {
   padding-right: 15px;

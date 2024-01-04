@@ -30,7 +30,7 @@
                     <label>Foto</label>
                     <input type="file" class="form-control" name="foto">
                     <img src="<?= BASEURL . "/public/assets/frontsite/img/foto_profile/" . $data['produk']['foto']; ?>" style="width: 60px;">
-                   </div>
+                  </div>
               </div>
               <!-- /.card-body -->
               <div class="card-footer">

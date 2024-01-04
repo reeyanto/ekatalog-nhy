@@ -1,7 +1,6 @@
 <?php
 class Produk extends Controller
 {
-
     public function __construct() {
         if(Session::get('nama') == null) {
             header('location:'. BASEURL . '/frontsite/login');
@@ -20,6 +19,7 @@ class Produk extends Controller
         $this->view('backsite/templates/footer');
         $this->view('backsite/templates/script');
     }
+
     public function search()
     {
         $data['title'] = 'Produk';
@@ -48,7 +48,6 @@ class Produk extends Controller
 
     public function store()
     {
-       
         if (isset($_POST['proses'])) {
             $namaFile = $_FILES['foto']['name'];
             $ukuranFile = $_FILES['foto']['size'];
@@ -83,7 +82,6 @@ class Produk extends Controller
             header('location: ' . BASEURL . '/backsite/Produk');
             exit;
         }
-
     }
 
 
@@ -102,14 +100,6 @@ class Produk extends Controller
 
     public function update()
     {
-        // if ($this->model('ProdukModel')->updateProduk($_POST) > 0) {
-        //     Flasher::setMessage('Berhasil', 'diupdate', 'success');
-        //     header('location: ' . BASEURL . '/backsite/produk');
-        //     exit;
-        // } else {
-        //     Flasher::setMessage('Gagal', 'diupdate', 'danger');
-        //     header('location: ' . BASEURL . '/backsite/produk');
-        //     exit;
         if (isset($_POST['proses'])) {
             $id = $_POST['id'];
             $namaFile = $_FILES['foto']['name'];
@@ -166,6 +156,8 @@ class Produk extends Controller
             }
         }
     }
+
+    
     public function deploy($id)
     {
         if ($this->model('ProdukModel')->deleteProduk($id) > 0) {

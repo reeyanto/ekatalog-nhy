@@ -15,5 +15,5 @@ class Menu extends Controller
 
     public function detail($id) {
         
-    }
+    } 
 }
