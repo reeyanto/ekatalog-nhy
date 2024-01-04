@@ -11,7 +11,7 @@
     <!-- Sidebar user (optional) -->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
-        <img src="<?= BASEURL; ?>/assets/backsite/dist/img/muka.png" class="img-circle elevation-2" alt="User Image">
+        <img src="<?= BASEURL; ?>/assets/backsite/dist/img/logo.png" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
         <a href="#" class="d-block">NHY Taylor</a>
@@ -27,22 +27,6 @@
             <p> Produk </p>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="<?= BASEURL; ?>/backsite/user" class="nav-link">
-            <i class="nav-icon fas fa-address-book"></i>
-            <p> Master Contact </p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="<?= BASEURL; ?>/backsite/user" class="nav-link">
-            <i class="nav-icon fas fa-user"></i>
-            <p> Master User</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="<?= BASEURL; ?>/backsite/signup" class="nav-link">
-            <i class="nav-icon fas fa-sign-out-alt"></i>
-            <p>Sign Up </p>
           </a>
         </li>
       </ul>

@@ -5,12 +5,12 @@
   <div class="container" data-aos="fade-up">
 
     <div class="section-header">
-      <h2>About Us</h2>
+      <h2></h2>
       <p>Learn More <span>About Us</span></p>
     </div>
 
     <div class="row gy-4">
-    <div class="col-lg-7 position-relative about-img"  style="background-image: url(<?= BASEURL; ?>/assets/frontsite/img/lili.jpg)"; data-aos="fade-up" data-aos-delay="150">
+    <div class="col-lg-7 position-relative about-img"  style="background-image: url(<?= BASEURL; ?>/assets/frontsite/img/foto.jpg)"; data-aos="fade-up" data-aos-delay="150">
       </div>
       <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
         <div class="content ps-0 ps-lg-5">

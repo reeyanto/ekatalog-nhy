@@ -17,6 +17,7 @@ class App
             unset($url[0]);
         } else {
             $controllerDir .= 'frontsite/';
+            unset($url[0]);
         }
 
         // Controller
