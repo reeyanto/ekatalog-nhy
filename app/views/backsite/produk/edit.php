@@ -27,10 +27,10 @@
                   <input type="text" class="form-control" placeholder="masukkan harga..." name="harga" value="<?= $data['produk']['harga']; ?>">
                 </div>
                 <div class="form-group">
-                    <label>Foto</label>
-                    <input type="file" class="form-control" name="foto">
-                    <img src="<?= BASEURL . "/public/assets/frontsite/img/foto_profile/" . $data['produk']['foto']; ?>" style="width: 60px;">
-                  </div>
+                  <label>Foto</label>
+                  <input type="file" class="form-control" name="foto">
+                  <img src="<?= BASEURL . "/public/assets/frontsite/img/foto_profile/" . $data['produk']['foto']; ?>" style="width: 60px;">
+                </div>
               </div>
               <!-- /.card-body -->
               <div class="card-footer">

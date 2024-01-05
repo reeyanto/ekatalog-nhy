@@ -3,7 +3,7 @@ class Produk extends Controller
 {
     public function __construct() {
         if(Session::get('nama') == null) {
-            header('location:'. BASEURL . '/frontsite/login');
+            header('location:'. BASEURL . '/frontsite/login/logout');
         }
     }
 

@@ -11,7 +11,7 @@
         <ul>
           <li><a href="<?= BASEURL; ?>/home">Home</a></li>
           <li><a href="<?= BASEURL; ?>/frontsite/about">About</a></li>
-          <li><a href="<?= BASEURL; ?>/frontsite/menu">Menu</a></li>
+          <li><a href="<?= BASEURL; ?>/frontsite/menu">Produk</a></li>
           <li class="dropdown"><a href="#"><span>Media Sosial</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="https://www.instagram.com/ndaa_prtm/">instagram</a></li>
