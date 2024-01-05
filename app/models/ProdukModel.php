@@ -54,4 +54,5 @@ class ProdukModel {
         $this->db->bind('key', "%$key%");
         return $this->db->resultSet();
     }
+    
 }

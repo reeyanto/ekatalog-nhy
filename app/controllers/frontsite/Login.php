@@ -23,5 +23,6 @@ class Login extends Controller {
     public function logout() {
         Session::destroy();
         header('location:'. BASEURL);
+        
     }
 }

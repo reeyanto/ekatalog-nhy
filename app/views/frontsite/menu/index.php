@@ -1,5 +1,3 @@
-<!-- ... (Bagian lain dari halaman Anda) ... -->
-
 <!-- ======= Search Bar Section ======= -->
 <!-- ... (Bagian lain dari halaman Anda) ... -->
 
@@ -12,9 +10,8 @@
         // Tambahkan kembali semua item menu ke dalam variable originalItems
         <?php foreach ($data['produk'] as $row) : ?>
             originalItems += `
-                <div class="col-lg-4 menu-item">
-                    <a href="/public/assets/frontsite/img/foto_profile/" class="glightbox">
-                        <img src="<?= BASEURL . "/public/assets/frontsite/img/foto_profile/" . $row['foto']; ?>" style="width: 250px;">
+                <div class="col-lg-4 menu-item">            
+                        <img src="<?= BASEURL . "/frontsite/detail/index/" . $row['foto']; ?>" style="width: 250px;">
                     </a>
                     <p class="name">
                         <?= $row['nama']; ?>
@@ -57,6 +54,7 @@
             <h2></h2>
             <p>Check Our <span>Butik Menu</span></p>
         </div>
+
    <!-- ======= Search Bar Section ======= -->
 <section id="search" class="search">
     <div class="container" data-aos="fade-up">
@@ -81,32 +79,36 @@
 <section id="searchResults" class="search">
     <!-- Konten hasil pencarian... -->
 </section>
-
 <!-- Hasil pencarian ke samping -->
 <div class="container">
     <div class="row" id="menuItems">
         <!-- Tempat untuk menampilkan hasil pencarian -->
     </div>
 </div>
-
+<script>
+    var originalItems = ''; // Variabel untuk menyimpan hasil tampilan awal
+   
+    // Simpan hasil tampilan awal pada saat halaman dimuat
+    document.addEventListener('DOMContentLoaded', function() {
+        var menuItems = document.getElementById('menuItems');
+        originalItems = menuItems.innerHTML; // Simpan hasil tampilan awal
+    });
+</script>
+<div id="separator" style="width: 100%; border-bottom: 1px solid #ccc; margin-bottom: 20px;"></div>
 <script>
     function resetSearch() {
+        var searchQuery = document.getElementById('searchQuery');
+        searchQuery.value = ''; // Membersihkan nilai input pencarian
+        
+        // Menampilkan kembali hasil tampilan awal
         var menuItems = document.getElementById('menuItems');
-        var resultsSection = document.getElementById('searchResults');
-        resultsSection.innerHTML = ''; // Kosongkan konten hasil pencarian sebelumnya
-        // Dapatkan data baju yang sudah ditampilkan
-        var shownItems = document.querySelectorAll('.menu-item');
+        menuItems.innerHTML = originalItems;
 
-        // Ubah setiap baju yang sudah ditampilkan menjadi tidak tampil
-        shownItems.forEach(function(item) {
-            item.style.display = 'none';
-        });
-
-        document.getElementById('searchQuery').value = ''; // Mengatur nilai input pencarian ke kosong
+        // Menyembunyikan garis pemisah
+        var separator = document.getElementById('separator');
+        separator.style.display = 'none';
     }
 </script>
-
-
             <!-- Item menu akan ditampilkan di sini -->
             <div class="horizontal">
             <?php $count = 0; ?>
@@ -157,8 +159,33 @@
             }
         });
 
-        menuItems.innerHTML = itemsToDisplay; // Memasukkan hasil pencarian ke dalam bagian menu
+                if (itemsToDisplay !== '') {
+                // Menampilkan hasil pencarian jika ada
+                menuItems.innerHTML = itemsToDisplay;
 
-        return false; // Mencegah submit form pada halaman PHP
+                // Menampilkan garis pemisah
+                var separator = document.getElementById('separator');
+                separator.style.display = 'block';
+            } else {
+                // Jika tidak ada hasil pencarian, kembalikan tampilan ke hasil awal
+                menuItems.innerHTML = originalItems;
+
+                // Sembunyikan garis pemisah
+                var separator = document.getElementById('separator');
+                separator.style.display = 'none';
+            }
+             // Tambahkan teks "Mungkin Anda Juga Suka" setelah hasil pencarian yang ditemukan
+            if (itemsToDisplay !== '') {
+                itemsToDisplay += '<div style="text-align: center; margin-top: 50px;">Mungkin Anda Juga Suka</div>';
+            }
+
+            menuItems.innerHTML = itemsToDisplay; // Memasukkan hasil pencarian ke dalam bagian menu
+
+
+            return false; // Mencegah submit form pada halaman PHP
+
+        // menuItems.innerHTML = itemsToDisplay; // Memasukkan hasil pencarian ke dalam bagian menu
+
+        // return false; // Mencegah submit form pada halaman PHP
     });
 </script>
