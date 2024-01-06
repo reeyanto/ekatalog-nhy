@@ -114,17 +114,12 @@
             <?php $count = 0; ?>
             <?php foreach ($data['produk'] as $row) : ?>
                 <div class="col-lg-4 menu-item">
-                    <a href="/public/assets/frontsite/img/foto_profile/" class="glightbox">
-                        <img src="<?= BASEURL . "/public/assets/frontsite/img/foto_profile/" . $row['foto']; ?>" style="width: 250px;">
-                    </a>
+                <a href="<?= BASEURL . "/frontsite/detail/index/" . $row['id']; ?>" target="_blank">
+    <img src="<?= BASEURL . "/public/assets/frontsite/img/foto_profile/" . $row['foto']; ?>" style="width: 250px;">
+</a>
+
                     <p class="name">
                         <?= $row['nama']; ?>
-                    </p>
-                    <p class="ingredients">
-                        <?= $row['deskripsi']; ?>
-                    </p>
-                    <p class="price">
-                        <?= $row['harga']; ?>
                     </p>
                 </div>
                 <style>

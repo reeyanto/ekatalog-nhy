@@ -147,11 +147,11 @@ class Produk extends Controller
                 if ($this->model('ProdukModel')->updateProduk($data) > 0) {
                     Flasher::setMessage('Berhasil', 'diupdate', 'success');
                     header('location: ' . BASEURL . '/backsite/produk');
-                    exit;
+                    return;
                 } else {
                     Flasher::setMessage('Gagal', 'diupdate', 'danger');
                     header('location: ' . BASEURL . '/backsite/produk/edit/' . $id);
-                    exit;
+                    return;
                 }
             }
         }

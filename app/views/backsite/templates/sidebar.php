@@ -25,24 +25,14 @@
             <p> Produk </p>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="<?= BASEURL; ?>/backsite/user" class="nav-link">
-            <i class="nav-icon fas fa-address-book"></i>
-            <p> Master Contact </p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="<?= BASEURL; ?>/backsite/user" class="nav-link">
-            <i class="nav-icon fas fa-user"></i>
-            <p> Master User</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="<?= BASEURL; ?>/backsite/signup" class="nav-link">
-            <i class="nav-icon fas fa-sign-out-alt"></i>
-            <p>Sign Up </p>
-          </a>
-        </li>
+         
+<div style="position: relative; height: 65vh;">
+    <li class="nav-item d-none d-sm-inline-block" style="position: absolute; top: 100%; left: 50%; transform: translate(-30%, -50%); text-align: center;">
+        <a href="<?php echo BASEURL; ?>/frontsite/login/logout" style="color: pink; padding: 10px; ">Log Out</a>
+    </li>
+</div>
+ 
+
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
