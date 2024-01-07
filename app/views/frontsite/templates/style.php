@@ -20,7 +20,6 @@
 
   <!-- Vendor CSS Files -->
   <link href="<?= BASEURL; ?>/assets/frontsite/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="<?= BASEURL; ?>/assets/frontsite/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="<?= BASEURL; ?>/assets/frontsite/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="<?= BASEURL; ?>/assets/frontsite/vendor/aos/aos.css" rel="stylesheet">
   <link href="<?= BASEURL; ?>/assets/frontsite/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">

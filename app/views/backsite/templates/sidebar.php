@@ -25,14 +25,12 @@
             <p> Produk </p>
           </a>
         </li>
-         
-<div style="position: relative; height: 65vh;">
+        
+<div style="position: relative; height: 60vh;">
     <li class="nav-item d-none d-sm-inline-block" style="position: absolute; top: 100%; left: 50%; transform: translate(-30%, -50%); text-align: center;">
         <a href="<?php echo BASEURL; ?>/frontsite/login/logout" style="color: pink; padding: 10px; ">Log Out</a>
     </li>
 </div>
- 
-
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

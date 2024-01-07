@@ -29,12 +29,12 @@
                 <div class="form-group">
                   <label>Foto</label>
                   <input type="file" class="form-control" name="foto">
-                  <img src="<?= BASEURL . "/public/assets/frontsite/img/foto_profile/" . $data['produk']['foto']; ?>" style="width: 60px;">
+                  <img src="<?= BASEURL . "/public/assets/frontsite/img/foto_profile/"  . $data['produk']['foto']; ?>" style="width: 60px;">
                 </div>
               </div>
               <!-- /.card-body -->
               <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Ubah</button>
+                <button type="submit" class="btn btn-primary" name="proses">Ubah</button>
               </div>
             </form>
           </div>

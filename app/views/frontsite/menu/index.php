@@ -1,7 +1,3 @@
-<!-- ======= Search Bar Section ======= -->
-<!-- ... (Bagian lain dari halaman Anda) ... -->
-
-<!-- ... (Bagian lain dari halaman Anda) ... -->
 <script>
     function resetSearch() {
         var menuItems = document.getElementById('menuItems');
